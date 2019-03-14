@@ -1,0 +1,26 @@
+{
+  "name": "asynchronousforeach",
+  "version": "0.0.1",
+  "description": "async parallel/serial foreach",
+  "main": "dest/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development src/index.js",
+    "build": "webpack --mode production src/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "async",
+    "serial",
+    "parallel",
+    "foreach"
+  ],
+  "author": "Andrea Simone Costa <andrysimo1997@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
