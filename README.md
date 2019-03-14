@@ -1,7 +1,7 @@
 # Asynchronous forEach
 
 A Symbol based _Array.prototype_ extension that enable asynchronous declarative iteration on arrays and array-like objects.
-The following two extension adhere to the _Array.prototype.forEach_ ![syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
+The following two extension adhere to the _Array.prototype.forEach_ [syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
 
 ## Asynchronous Serial forEach
 
