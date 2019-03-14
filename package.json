@@ -1,6 +1,6 @@
 {
   "name": "asynchronousforeach",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "async parallel/serial foreach",
   "main": "dist/main.js",
   "scripts": {
