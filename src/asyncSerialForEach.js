@@ -1,13 +1,12 @@
 const asyncSerialForEach = Symbol('asyncSerialForEach');
-Array.prototype[asyncSerialForEach] = async function (callback, thisArg) {
 
+Array.prototype[asyncSerialForEach] = async function (callback, thisArg) {
     if (this == null) {
-        // this should be the array on which we perform the async iteration
-        throw new TypeError('this is null or not defined');
+        // This should be the array in which we perform the async iteration
+        throw new TypeError('This array is null or undefined');
     }
 
     const O = Object(this);
-
     const len = O.length >>> 0;
 
     if (typeof callback !== 'function') {
@@ -22,14 +21,18 @@ Array.prototype[asyncSerialForEach] = async function (callback, thisArg) {
     let k = 0;
     while (k < len) {
         let kValue;
+        
         if (k in O) {
             kValue = O[k];
+            
             await callback.call(T, kValue, k, O);
         }
+        
         k++;
     }
 
-    // forEach does return undefined
+    // forEach returns undefined
+    return;
 };
 
 export { asyncSerialForEach };
