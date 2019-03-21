@@ -2,8 +2,8 @@ const asyncSerialForEach = Symbol('asyncSerialForEach');
 
 Array.prototype[asyncSerialForEach] = async function (callback, thisArg) {
     if (this == null) {
-        // This should be the array in which we perform the async iteration
-        throw new TypeError('This array is null or undefined');
+        // this should be the array in which we perform the async iteration
+        throw new TypeError('this array is null or undefined');
     }
 
     const O = Object(this);
