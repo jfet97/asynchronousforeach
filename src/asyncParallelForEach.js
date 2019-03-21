@@ -2,8 +2,8 @@ const asyncParallelForEach = Symbol('asyncParallelForEach');
 
 Array.prototype[asyncParallelForEach] = async function (callback, thisArg) {
     if (this == null) {
-        // This should be the array on which we perform the async iteration
-        throw new TypeError('This array is null or undefined');
+        // this should be the array on which we perform the async iteration
+        throw new TypeError('this array is null or undefined');
     }
 
     const O = Object(this);
