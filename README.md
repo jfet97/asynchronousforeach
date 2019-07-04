@@ -1,3 +1,4 @@
+[![NPM version](https://img.shields.io/npm/v/asynchronousforeach.svg)](https://www.npmjs.com/package/asynchronousforeach) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/jfet97/asynchronousforeach/blob/master/LICENSE) ![](https://img.shields.io/npm/dt/asynchronousforeach.svg) ![](https://img.shields.io/badge/dependencies-no%20dependencies-%231e88e5%20.svg)
 # Asynchronous forEach
 
 A Symbol based _Array.prototype_ extension that enables asynchronous declarative iteration on arrays and array-like objects.
