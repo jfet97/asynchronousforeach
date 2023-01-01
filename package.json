@@ -20,7 +20,7 @@
   "author": "Andrea Simone Costa <andrysimo1997@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
